@@ -1,0 +1,372 @@
+{
+  "type": "object",
+  "properties": {
+    "players": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "account_id": {
+            "type": "number"
+          },
+          "name": {
+            "type": "string"
+          },
+          "hero_id": {
+            "type": "number"
+          },
+          "team": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "radiant_team": {
+      "type": "object",
+      "properties": {
+        "team_name": {
+          "type": "string"
+        },
+        "team_id": {
+          "type": "number"
+        },
+        "team_logo": {
+          "type": "number"
+        },
+        "complete": {
+          "type": "boolean"
+        }
+      }
+    },
+    "dire_team": {
+      "type": "object",
+      "properties": {
+        "team_name": {
+          "type": "string"
+        },
+        "team_id": {
+          "type": "number"
+        },
+        "team_logo": {
+          "type": "number"
+        },
+        "complete": {
+          "type": "boolean"
+        }
+      }
+    },
+    "lobby_id": {
+      "type": "number"
+    },
+    "match_id": {
+      "type": "number"
+    },
+    "spectators": {
+      "type": "number"
+    },
+    "series_id": {
+      "type": "number"
+    },
+    "game_number": {
+      "type": "number"
+    },
+    "league_id": {
+      "type": "number"
+    },
+    "stream_delay_s": {
+      "type": "number"
+    },
+    "radiant_series_wins": {
+      "type": "number"
+    },
+    "dire_series_wins": {
+      "type": "number"
+    },
+    "series_type": {
+      "type": "number"
+    },
+    "league_series_id": {
+      "type": "number"
+    },
+    "league_game_id": {
+      "type": "number"
+    },
+    "stage_name": {
+      "type": "string"
+    },
+    "league_tier": {
+      "type": "number"
+    },
+    "scoreboard": {
+      "type": "object",
+      "properties": {
+        "duration": {
+          "type": "number"
+        },
+        "roshan_respawn_timer": {
+          "type": "number"
+        },
+        "radiant": {
+          "type": "object",
+          "properties": {
+            "score": {
+              "type": "number"
+            },
+            "tower_state": {
+              "type": "number"
+            },
+            "barracks_state": {
+              "type": "number"
+            },
+            "picks": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "hero_id": {
+                    "type": "number"
+                  }
+                }
+              }
+            },
+            "bans": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "hero_id": {
+                    "type": "number"
+                  }
+                }
+              }
+            },
+            "players": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "player_slot": {
+                    "type": "number"
+                  },
+                  "account_id": {
+                    "type": "number"
+                  },
+                  "hero_id": {
+                    "type": "number"
+                  },
+                  "kills": {
+                    "type": "number"
+                  },
+                  "death": {
+                    "type": "number"
+                  },
+                  "assists": {
+                    "type": "number"
+                  },
+                  "last_hits": {
+                    "type": "number"
+                  },
+                  "denies": {
+                    "type": "number"
+                  },
+                  "gold": {
+                    "type": "number"
+                  },
+                  "level": {
+                    "type": "number"
+                  },
+                  "gold_per_min": {
+                    "type": "number"
+                  },
+                  "xp_per_min": {
+                    "type": "number"
+                  },
+                  "ultimate_state": {
+                    "type": "number"
+                  },
+                  "ultimate_cooldown": {
+                    "type": "number"
+                  },
+                  "item0": {
+                    "type": "number"
+                  },
+                  "item1": {
+                    "type": "number"
+                  },
+                  "item2": {
+                    "type": "number"
+                  },
+                  "item3": {
+                    "type": "number"
+                  },
+                  "item4": {
+                    "type": "number"
+                  },
+                  "item5": {
+                    "type": "number"
+                  },
+                  "respawn_timer": {
+                    "type": "number"
+                  },
+                  "position_x": {
+                    "type": "number"
+                  },
+                  "position_y": {
+                    "type": "number"
+                  },
+                  "net_worth": {
+                    "type": "number"
+                  }
+                }
+              }
+            },
+            "abilities": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "ability_id": {
+                    "type": "number"
+                  },
+                  "ability_level": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "dire": {
+          "type": "object",
+          "properties": {
+            "score": {
+              "type": "number"
+            },
+            "tower_state": {
+              "type": "number"
+            },
+            "barracks_state": {
+              "type": "number"
+            },
+            "picks": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "hero_id": {
+                    "type": "number"
+                  }
+                }
+              }
+            },
+            "bans": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "hero_id": {
+                    "type": "number"
+                  }
+                }
+              }
+            },
+            "players": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "player_slot": {
+                    "type": "number"
+                  },
+                  "account_id": {
+                    "type": "number"
+                  },
+                  "hero_id": {
+                    "type": "number"
+                  },
+                  "kills": {
+                    "type": "number"
+                  },
+                  "death": {
+                    "type": "number"
+                  },
+                  "assists": {
+                    "type": "number"
+                  },
+                  "last_hits": {
+                    "type": "number"
+                  },
+                  "denies": {
+                    "type": "number"
+                  },
+                  "gold": {
+                    "type": "number"
+                  },
+                  "level": {
+                    "type": "number"
+                  },
+                  "gold_per_min": {
+                    "type": "number"
+                  },
+                  "xp_per_min": {
+                    "type": "number"
+                  },
+                  "ultimate_state": {
+                    "type": "number"
+                  },
+                  "ultimate_cooldown": {
+                    "type": "number"
+                  },
+                  "item0": {
+                    "type": "number"
+                  },
+                  "item1": {
+                    "type": "number"
+                  },
+                  "item2": {
+                    "type": "number"
+                  },
+                  "item3": {
+                    "type": "number"
+                  },
+                  "item4": {
+                    "type": "number"
+                  },
+                  "item5": {
+                    "type": "number"
+                  },
+                  "respawn_timer": {
+                    "type": "number"
+                  },
+                  "position_x": {
+                    "type": "number"
+                  },
+                  "position_y": {
+                    "type": "number"
+                  },
+                  "net_worth": {
+                    "type": "number"
+                  }
+                }
+              }
+            },
+            "abilities": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "ability_id": {
+                    "type": "number"
+                  },
+                  "ability_level": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

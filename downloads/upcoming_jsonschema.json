@@ -1,0 +1,38 @@
+{
+  "type": "object",
+      "items": {
+        "type": "object",
+        "properties": {
+          "img1": {
+            "type": "string"
+          },
+          "team1": {
+            "type": "string"
+          },
+          "img2": {
+            "type": "string"
+          },
+          "team2": {
+            "type": "string"
+          },
+          "linkID": {
+            "type": "string"
+          },
+          "bestof": {
+            "type": "string"
+          },
+          "eventName": {
+            "type": "string"
+          },
+          "fullDate": {
+            "type": "string"
+          },
+          "timeStamp": {
+            "type": "boolean"
+          },
+          "liveIn": {
+            "type": "string"
+          }
+    }
+  }
+}

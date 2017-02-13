@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "leagueid": {
+      "type": "number"
+    },
+    "description": {
+      "type": "string"
+    },
+    "tournament_url": {
+      "type": "string"
+    },
+    "itemdef": {
+      "type": "number"
+    }
+  }
+}
