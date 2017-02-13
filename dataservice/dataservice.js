@@ -18,7 +18,7 @@ module.exports.getLiveGames = function(req, res) {
     res.header("Cache-Control", "public, max-age=30");
     var result = [];
 
-    async.forEachOf(liveGames, function (game, key, callback) {
+    async.each(liveGames, function (game, callback) {
       
       var gameString = JSON.stringify(game);
       var gameObject = JSON.parse(gameString);
@@ -71,7 +71,6 @@ module.exports.getLiveGames = function(req, res) {
           
           if(req.params.complete === "true"){
               if(!(results[0] === null || results[1] === null)){
-                console.log("true porra");
                 result.push(gameObject);
               }
           }else{
