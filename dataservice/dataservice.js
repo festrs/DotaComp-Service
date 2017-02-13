@@ -8,6 +8,14 @@ var EndedGamesModel = mongoose.model("EndedGames");
 var TournamentsModel = mongoose.model("Tournaments");
 var Teams = mongoose.model("Teams");
 
+function findTeamByID(teamID){
+  return Teams.findById(teamID, function (err, team) {  
+      if (err) {
+        console.log(err);
+      }
+    });
+}
+
 module.exports.getLiveGames = function(req, res) { 
 
   console.log();
@@ -59,7 +67,9 @@ module.exports.getLiveGames = function(req, res) {
         if (err){
           console.log(err);
         } 
-        TournamentsModel.findOne({"leagueid" : gameObject.league_id}).exec(function(err, tournament){
+        TournamentsModel
+        .findOne({"leagueid" : gameObject.league_id})
+        .exec(function(err, tournament){
           if (err){
             console.log(err);
           } 
@@ -114,11 +124,3 @@ module.exports.getEndedGames = function(req, res) {
     res.status(200).json(endedGames);
   });
 };
-
-function findTeamByID(teamID){
-  return Teams.findById(teamID, function (err, team) {  
-      if (err) {
-        console.log(err);
-      }
-    });
-}
