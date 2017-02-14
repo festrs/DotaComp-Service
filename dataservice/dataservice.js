@@ -18,8 +18,6 @@ function findTeamByID(teamID){
 
 module.exports.getLiveGames = function(req, res) { 
 
-  console.log();
-
   LiveGamesModel
   .find()
   .exec(function(err, liveGames) {
@@ -80,7 +78,7 @@ module.exports.getLiveGames = function(req, res) {
           }
           
           if(req.params.complete === "true"){
-              if(!(results[0] === null || results[1] === null)){
+              if(!(gameObject.dire_team == null || gameObject.radiant_team == null)){
                 result.push(gameObject);
               }
           }else{
